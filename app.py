@@ -80,7 +80,7 @@ col1, col2 = st.columns(2)
 with col1:
     usuario_input = st.text_input("Correo Electrónico Institucional", placeholder="ejemplo@correo.edu.co").strip().lower()
 with col2:
-    pin_input = st.text_input("PIN de Acceso (Últimos 4 dígitos del código)", type="password", placeholder="****").strip()
+    pin_input = st.text_input("PIN de Acceso (Últimos 4 dígitos del código estudiantil)", type="password", placeholder="****").strip()
 
 # Botón de validación
 if st.button("Consultar Calificaciones", type="primary"):
