@@ -78,7 +78,7 @@ st.write("Ingrese sus credenciales institucionales para verificar su identidad y
 # Formulario en dos columnas con textos grandes y descriptivos
 col1, col2 = st.columns(2)
 with col1:
-    usuario_input = st.text_input("Correo Electrónico Institucional \n\n", placeholder="ejemplo@correo.edu.co").strip().lower()
+    usuario_input = st.text_input("Correo Electrónico Institucional \n\nejemplo@correo.iue.edu.co", placeholder="ejemplo@correo.edu.co").strip().lower()
 with col2:
     pin_input = st.text_input("PIN de Acceso \n\n(Últimos 4 dígitos del código estudiantil)", type="password", placeholder="****").strip()
 
