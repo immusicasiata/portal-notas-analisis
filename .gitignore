@@ -1,0 +1,16 @@
+# Archivos de datos originales (Excel / CSV)
+*.csv
+*.xlsx
+*.xls
+
+# Archivo local de Base64 generado
+secreto_base64.txt
+
+#generador de informacion codificada
+generar_base64.py
+
+# Entornos virtuales o caché de Python
+__pycache__/
+.streamlit/
+.venv/
+venv/
