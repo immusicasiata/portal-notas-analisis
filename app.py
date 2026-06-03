@@ -65,15 +65,13 @@ def cargar_datos_seguros():
 
 # Inicializar base de datos y calcular promedio anónimo de control
 df_notas = cargar_datos_seguros()
-promedio_general = float(df_notas["Nota_Final"].mean())
+#promedio_general = float(df_notas["Nota_Final"].mean())
 
 # ------------------------------------------------------------------
 # INTERFAZ DE ACCESO CONFIDENCIAL
 # ------------------------------------------------------------------
 st.title("📝 Portal de Notas de Clase")
 st.write("Ingrese sus credenciales institucionales para verificar su identidad y consultar sus resultados académicos.")
-
-
 
 # Formulario en dos columnas con textos grandes y descriptivos
 col1, col2 = st.columns(2)
@@ -104,18 +102,18 @@ if st.button("Consultar Calificaciones", type="primary"):
         m1, m2 = st.columns(2)
         with m1:
             #st.markdown("##### Limpieza de datos")
-            st.metric(label="Limpieza de datos", value=f"{str(estudiante['Act_1']):.1f}")
+            st.metric(label="Limpieza de datos", value=str(estudiante['Act_1']))
         with m2:
             #st.markdown("##### Dash como historia")
-            st.metric(label="Dash como historia", value=f"{str(estudiante['Act_2']):.1f}")
+            st.metric(label="Dash como historia", value=str(estudiante['Act_2']))
         
         m3, m4 = st.columns(2)
         with m3:
             #st.markdown("##### Programar dash")
-            st.metric(label="Programar dash", value=f"{str(estudiante['Act_3']):.1f}")
+            st.metric(label="Programar dash", value=str(estudiante['Act_3']))
         with m4:
             #st.markdown("##### Despliegue en linea")
-            st.metric(label="Despliegue en linea", value=f"{str(estudiante['Act_4']):.1f}")
+            st.metric(label="Despliegue en linea", value=str(estudiante['Act_4']))
    
         st.write("")
         
@@ -123,7 +121,7 @@ if st.button("Consultar Calificaciones", type="primary"):
       #  c1, c2 = st.columns([1, 2])
       #  with c1:
         st.markdown("### Definitiva")
-        nota_final = float(estudiante['Nota_Final'])
+        #nota_final = float(estudiante['Nota_Final'])
             #desviacion = nota_final - promedio_general
             
             # Muestra la nota definitiva y cuánto está por encima/debajo del promedio del grupo
