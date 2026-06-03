@@ -128,7 +128,7 @@ if st.button("Consultar Calificaciones", type="primary"):
             
             # Muestra la nota definitiva y cuánto está por encima/debajo del promedio del grupo
         st.metric(
-            label="Promedio Final Acumulado", 
+            label="Promedio Acumulado", 
             value=f"{nota_final:.2f}", 
             #delta=f"{desviacion:+.2f} vs Grupo"
         )
